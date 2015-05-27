@@ -36,13 +36,12 @@
     
     sections = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i < 5; i ++) {
+    for (int i = 0; i < 7; i ++) {
         [sections addObject:[NSString stringWithFormat:@"iPhone %d",i+1]];
     }
     
     self.collectionView.draggable   = YES;
-//    self.collectionView.delegate    = self;
-//    self.collectionView.dataSource  =   self;
+
     
 }
 
@@ -70,9 +69,9 @@
     
 }
 
-- (void)trashCanViewAnimationOn:(BOOL)On{
+- (void)trashCanViewAnimationShow:(BOOL)show{
     
-    if (On) {
+    if (show) {
         [UIView animateWithDuration:0.3 animations:^{
             //
             trashCanView.frame = CGRectMake(0, self.view.frame.size.height-trashCanView.frame.size.height, trashCanView.frame.size.width, trashCanView.frame.size.height);
@@ -175,12 +174,15 @@
 
 - (BOOL)collectionView:(LSCollectionViewHelper *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
+        //Check is the Item can Move Or Not
+        //...
+    
+    
         //Show trash can View
         //...
-        [self trashCanViewAnimationOn:YES];
-    
-        //Check is the Item can Move
-        //...
+        [self trashCanViewAnimationShow:YES];
     
         return YES;
     
@@ -189,24 +191,12 @@
 - (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
     
-    //Check is the Item can Move to New Position
+    //Check is the Item can Move to New Position Or Not
     //...
     
     return YES;
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didMoveItemToTrashAtIndexPath:(NSIndexPath *)indexPath{
-    
-    //Handle Item that moved to trashCan
-    
-    [sections removeObjectAtIndex:indexPath.row];
-    
-    [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
-    [self.collectionView reloadData];
-    
-    [trashCanView openTrashCan:NO];
-    
-}
 
 - (void)collectionView:(LSCollectionViewHelper *)collectionView moveItemAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
@@ -221,15 +211,51 @@
     
     NSLog(@"Position change");
     
-    [self trashCanViewAnimationOn:NO];
+    [self trashCanViewAnimationShow:NO];
 
 
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView didMoveItemToTrashAtIndexPath:(NSIndexPath *)indexPath{
+    
+    //Handle Item that moved to trashCan
+    
+    UIAlertController *alertController =
+    [UIAlertController alertControllerWithTitle:@"Alert" message:@"Sure To Delete ?" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction =
+    [UIAlertAction actionWithTitle:@"YES" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        //more to do
+        
+        [sections removeObjectAtIndex:indexPath.row];
+        
+        [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
+        [self.collectionView reloadData];
+
+        
+    }];
+    UIAlertAction *doneAction =
+    [UIAlertAction actionWithTitle:@"NO" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        //more to do
+        
+        
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:doneAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+    
+    [trashCanView openTrashCan:NO];
+    
+    
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     
-    NSLog(@"Selector row %d \n %@",indexPath.row,sections[indexPath.row]);
+    NSLog(@"Selector row %ld \n %@",(long)indexPath.row,sections[indexPath.row]);
     
     
 }
