@@ -278,20 +278,25 @@ typedef NS_ENUM(NSInteger, _ScrollingDirection) {
                     self.layoutHelper.toIndexPath = nil;
                 } completion:^(BOOL finished) {
                     if (finished) {
+                        
+                        //Check if the "didMoveItemAtIndexPath:toIndexPath:" implemented
                         if ([dataSource respondsToSelector:@selector(collectionView:didMoveItemAtIndexPath:toIndexPath:)]) {
- 
+                            
                             [dataSource collectionView:self.collectionView didMoveItemAtIndexPath:fromIndexPath toIndexPath:toIndexPath];
-
+                            
                         }
                         
+                        //Check if the "moveItemAtPosition:" implemented
                         if ([dataSource respondsToSelector:@selector(collectionView:moveItemAtPosition:)]) {
-                        
                             
+                            //If Item is Move Into Trash Can
                             if ([dataSource collectionView:self.collectionView moveItemAtPosition:self.position]) {
+                                
                                 
                                 mockCell.alpha = 0;
                                 self.position = CGPointMake(0, 0);
                                 
+                                //Check if the "didMoveItemToTrashAtIndexPath::" implemented
                                 if ([dataSource respondsToSelector:@selector(collectionView:didMoveItemToTrashAtIndexPath:)]) {
                                     
                                     [dataSource collectionView:self.collectionView didMoveItemToTrashAtIndexPath:toIndexPath];
