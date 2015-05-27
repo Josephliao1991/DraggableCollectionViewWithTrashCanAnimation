@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7d9-rH-8Bg">
+                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sqS-su-wCI" customClass="DraggableCollectionViewFlowLayout">
+                                    <size key="itemSize" width="95" height="116"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="5" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="lye-xY-gbz" customClass="Cell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="95" height="116"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yt8-dK-HLV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                                    <color key="backgroundColor" red="1" green="0.70359810649999999" blue="0.1983281579" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsz-2o-Ska">
+                                                    <rect key="frame" x="0.0" y="95" width="95" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="Zsz-2o-Ska" secondAttribute="centerX" id="6rx-6Q-Lpy"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Yt8-dK-HLV" secondAttribute="trailing" constant="-8" id="7Px-nX-0Ij"/>
+                                            <constraint firstItem="Zsz-2o-Ska" firstAttribute="leading" secondItem="lye-xY-gbz" secondAttribute="leadingMargin" constant="-8" id="8xp-68-GqF"/>
+                                            <constraint firstAttribute="centerY" secondItem="Zsz-2o-Ska" secondAttribute="centerY" constant="-47.5" id="BXM-1r-A5R"/>
+                                            <constraint firstItem="Yt8-dK-HLV" firstAttribute="top" secondItem="lye-xY-gbz" secondAttribute="topMargin" constant="-8" id="DTY-ot-dvw"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Zsz-2o-Ska" secondAttribute="bottom" constant="-8" id="KdO-kF-82Y"/>
+                                            <constraint firstItem="Yt8-dK-HLV" firstAttribute="leading" secondItem="lye-xY-gbz" secondAttribute="leadingMargin" constant="-8" id="fzz-y6-EkL"/>
+                                            <constraint firstAttribute="centerX" secondItem="Yt8-dK-HLV" secondAttribute="centerX" id="gad-70-inr"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Zsz-2o-Ska" secondAttribute="trailing" constant="-8" id="sFa-sp-T6V"/>
+                                            <constraint firstAttribute="centerY" secondItem="Yt8-dK-HLV" secondAttribute="centerY" constant="10.5" id="tQp-VN-hut"/>
+                                        </constraints>
+                                        <size key="customSize" width="95" height="116"/>
+                                        <connections>
+                                            <outlet property="theLabel" destination="Zsz-2o-Ska" id="mnh-Hg-Rg2"/>
+                                            <outlet property="theView" destination="Yt8-dK-HLV" id="Zm2-R6-9LI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lDE-4p-QiB"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lcX-qq-K9T"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="7d9-rH-8Bg" secondAttribute="trailing" constant="-16" id="Sud-zt-Jyq"/>
+                            <constraint firstItem="7d9-rH-8Bg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="X9Y-7r-OBu"/>
+                            <constraint firstItem="7d9-rH-8Bg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="e0X-Sl-xUO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7d9-rH-8Bg" secondAttribute="bottom" id="wip-6t-cbX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="7d9-rH-8Bg" id="788-OX-9u1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
