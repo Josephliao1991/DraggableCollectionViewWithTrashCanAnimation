@@ -281,7 +281,7 @@ typedef NS_ENUM(NSInteger, _ScrollingDirection) {
                         if ([dataSource respondsToSelector:@selector(collectionView:didMoveItemAtIndexPath:toIndexPath:)]) {
  
                             [dataSource collectionView:self.collectionView didMoveItemAtIndexPath:fromIndexPath toIndexPath:toIndexPath];
-                            self.position = CGPointMake(0, 0);
+
                         }
                         
                         if ([dataSource respondsToSelector:@selector(collectionView:moveItemAtPosition:)]) {
@@ -290,6 +290,7 @@ typedef NS_ENUM(NSInteger, _ScrollingDirection) {
                             if ([dataSource collectionView:self.collectionView moveItemAtPosition:self.position]) {
                                 
                                 mockCell.alpha = 0;
+                                self.position = CGPointMake(0, 0);
                                 
                                 if ([dataSource respondsToSelector:@selector(collectionView:didMoveItemToTrashAtIndexPath:)]) {
                                     
