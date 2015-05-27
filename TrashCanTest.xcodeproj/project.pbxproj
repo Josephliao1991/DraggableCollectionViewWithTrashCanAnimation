@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F3AF12A1B159C0600E0B755 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF1291B159C0600E0B755 /* main.m */; };
+		3F3AF12D1B159C0600E0B755 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF12C1B159C0600E0B755 /* AppDelegate.m */; };
+		3F3AF1301B159C0600E0B755 /* TrashCanTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF12E1B159C0600E0B755 /* TrashCanTest.xcdatamodeld */; };
+		3F3AF1331B159C0600E0B755 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF1321B159C0600E0B755 /* ViewController.m */; };
+		3F3AF1361B159C0600E0B755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AF1341B159C0600E0B755 /* Main.storyboard */; };
+		3F3AF1381B159C0600E0B755 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AF1371B159C0600E0B755 /* Images.xcassets */; };
+		3F3AF13B1B159C0600E0B755 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AF1391B159C0600E0B755 /* LaunchScreen.xib */; };
+		3F3AF1471B159C0700E0B755 /* TrashCanTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF1461B159C0700E0B755 /* TrashCanTestTests.m */; };
+		3F3AF1561B159C3100E0B755 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF1511B159C3100E0B755 /* Cell.m */; };
+		3F3AF1571B159C3100E0B755 /* UICollectionView+Draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF1531B159C3100E0B755 /* UICollectionView+Draggable.m */; };
+		3F3AF15D1B159C4C00E0B755 /* LSCollectionViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF15A1B159C4C00E0B755 /* LSCollectionViewHelper.m */; };
+		3F3AF15E1B159C4C00E0B755 /* LSCollectionViewLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF15C1B159C4C00E0B755 /* LSCollectionViewLayoutHelper.m */; };
+		3F3AF1621B159C6500E0B755 /* DraggableCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF1611B159C6500E0B755 /* DraggableCollectionViewFlowLayout.m */; };
+		3F3AF16F1B159CD600E0B755 /* bucket_body_style2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AF1641B159CD500E0B755 /* bucket_body_style2.png */; };
+		3F3AF1701B159CD600E0B755 /* bucket_lid_style2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AF1651B159CD500E0B755 /* bucket_lid_style2.png */; };
+		3F3AF1711B159CD600E0B755 /* BucketBody.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AF1661B159CD500E0B755 /* BucketBody.png */; };
+		3F3AF1721B159CD600E0B755 /* BucketBody@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AF1671B159CD500E0B755 /* BucketBody@2x.png */; };
+		3F3AF1731B159CD600E0B755 /* BucketLid.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AF1681B159CD500E0B755 /* BucketLid.png */; };
+		3F3AF1741B159CD600E0B755 /* BucketLid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AF1691B159CD500E0B755 /* BucketLid@2x.png */; };
+		3F3AF1751B159CD600E0B755 /* input_mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AF16A1B159CD500E0B755 /* input_mic.png */; };
+		3F3AF1761B159CD600E0B755 /* GLBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF16C1B159CD500E0B755 /* GLBucket.m */; };
+		3F3AF1771B159CD600E0B755 /* TrashCanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF16E1B159CD500E0B755 /* TrashCanView.m */; };
+		3F3AF17B1B15A7B000E0B755 /* JLMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AF17A1B15A7B000E0B755 /* JLMusicPlayer.m */; };
+		3F3AF17E1B15A7CF00E0B755 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AF17D1B15A7CF00E0B755 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F3AF1411B159C0700E0B755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F3AF11C1B159C0600E0B755 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F3AF1231B159C0600E0B755;
+			remoteInfo = TrashCanTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F3AF1241B159C0600E0B755 /* TrashCanTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrashCanTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3AF1281B159C0600E0B755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3AF1291B159C0600E0B755 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F3AF12B1B159C0600E0B755 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F3AF12C1B159C0600E0B755 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F3AF12F1B159C0600E0B755 /* TrashCanTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrashCanTest.xcdatamodel; sourceTree = "<group>"; };
+		3F3AF1311B159C0600E0B755 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F3AF1321B159C0600E0B755 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F3AF1351B159C0600E0B755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F3AF1371B159C0600E0B755 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F3AF13A1B159C0600E0B755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3F3AF1401B159C0700E0B755 /* TrashCanTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrashCanTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3AF1451B159C0700E0B755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3AF1461B159C0700E0B755 /* TrashCanTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrashCanTestTests.m; sourceTree = "<group>"; };
+		3F3AF1501B159C3100E0B755 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		3F3AF1511B159C3100E0B755 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		3F3AF1521B159C3100E0B755 /* UICollectionView+Draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Draggable.h"; sourceTree = "<group>"; };
+		3F3AF1531B159C3100E0B755 /* UICollectionView+Draggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Draggable.m"; sourceTree = "<group>"; };
+		3F3AF1541B159C3100E0B755 /* UICollectionViewDataSource_Draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewDataSource_Draggable.h; sourceTree = "<group>"; };
+		3F3AF1551B159C3100E0B755 /* UICollectionViewLayout_Warpable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLayout_Warpable.h; sourceTree = "<group>"; };
+		3F3AF1591B159C4C00E0B755 /* LSCollectionViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCollectionViewHelper.h; sourceTree = "<group>"; };
+		3F3AF15A1B159C4C00E0B755 /* LSCollectionViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCollectionViewHelper.m; sourceTree = "<group>"; };
+		3F3AF15B1B159C4C00E0B755 /* LSCollectionViewLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCollectionViewLayoutHelper.h; sourceTree = "<group>"; };
+		3F3AF15C1B159C4C00E0B755 /* LSCollectionViewLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCollectionViewLayoutHelper.m; sourceTree = "<group>"; };
+		3F3AF1601B159C6500E0B755 /* DraggableCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		3F3AF1611B159C6500E0B755 /* DraggableCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		3F3AF1641B159CD500E0B755 /* bucket_body_style2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bucket_body_style2.png; sourceTree = "<group>"; };
+		3F3AF1651B159CD500E0B755 /* bucket_lid_style2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bucket_lid_style2.png; sourceTree = "<group>"; };
+		3F3AF1661B159CD500E0B755 /* BucketBody.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BucketBody.png; sourceTree = "<group>"; };
+		3F3AF1671B159CD500E0B755 /* BucketBody@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BucketBody@2x.png"; sourceTree = "<group>"; };
+		3F3AF1681B159CD500E0B755 /* BucketLid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BucketLid.png; sourceTree = "<group>"; };
+		3F3AF1691B159CD500E0B755 /* BucketLid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BucketLid@2x.png"; sourceTree = "<group>"; };
+		3F3AF16A1B159CD500E0B755 /* input_mic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = input_mic.png; sourceTree = "<group>"; };
+		3F3AF16B1B159CD500E0B755 /* GLBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBucket.h; sourceTree = "<group>"; };
+		3F3AF16C1B159CD500E0B755 /* GLBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBucket.m; sourceTree = "<group>"; };
+		3F3AF16D1B159CD500E0B755 /* TrashCanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrashCanView.h; sourceTree = "<group>"; };
+		3F3AF16E1B159CD500E0B755 /* TrashCanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrashCanView.m; sourceTree = "<group>"; };
+		3F3AF1791B15A7B000E0B755 /* JLMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLMusicPlayer.h; sourceTree = "<group>"; };
+		3F3AF17A1B15A7B000E0B755 /* JLMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLMusicPlayer.m; sourceTree = "<group>"; };
+		3F3AF17D1B15A7CF00E0B755 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F3AF1211B159C0600E0B755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3AF17E1B15A7CF00E0B755 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3AF13D1B159C0700E0B755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F3AF11B1B159C0600E0B755 = {
+			isa = PBXGroup;
+			children = (
+				3F3AF17D1B15A7CF00E0B755 /* AudioToolbox.framework */,
+				3F3AF1261B159C0600E0B755 /* TrashCanTest */,
+				3F3AF1431B159C0700E0B755 /* TrashCanTestTests */,
+				3F3AF1251B159C0600E0B755 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F3AF1251B159C0600E0B755 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AF1241B159C0600E0B755 /* TrashCanTest.app */,
+				3F3AF1401B159C0700E0B755 /* TrashCanTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F3AF1261B159C0600E0B755 /* TrashCanTest */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AF12B1B159C0600E0B755 /* AppDelegate.h */,
+				3F3AF12C1B159C0600E0B755 /* AppDelegate.m */,
+				3F3AF1311B159C0600E0B755 /* ViewController.h */,
+				3F3AF1321B159C0600E0B755 /* ViewController.m */,
+				3F3AF17C1B15A7B400E0B755 /* MusicPlayer */,
+				3F3AF1781B159CDA00E0B755 /* TrashCanView */,
+				3F3AF1581B159C4100E0B755 /* DraggableCollectionView */,
+				3F3AF1341B159C0600E0B755 /* Main.storyboard */,
+				3F3AF1371B159C0600E0B755 /* Images.xcassets */,
+				3F3AF1391B159C0600E0B755 /* LaunchScreen.xib */,
+				3F3AF12E1B159C0600E0B755 /* TrashCanTest.xcdatamodeld */,
+				3F3AF1271B159C0600E0B755 /* Supporting Files */,
+			);
+			path = TrashCanTest;
+			sourceTree = "<group>";
+		};
+		3F3AF1271B159C0600E0B755 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AF1281B159C0600E0B755 /* Info.plist */,
+				3F3AF1291B159C0600E0B755 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F3AF1431B159C0700E0B755 /* TrashCanTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AF1461B159C0700E0B755 /* TrashCanTestTests.m */,
+				3F3AF1441B159C0700E0B755 /* Supporting Files */,
+			);
+			path = TrashCanTestTests;
+			sourceTree = "<group>";
+		};
+		3F3AF1441B159C0700E0B755 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AF1451B159C0700E0B755 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F3AF1581B159C4100E0B755 /* DraggableCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AF1501B159C3100E0B755 /* Cell.h */,
+				3F3AF1511B159C3100E0B755 /* Cell.m */,
+				3F3AF15F1B159C5100E0B755 /* Helpers */,
+				3F3AF1631B159C6E00E0B755 /* Layout */,
+				3F3AF1521B159C3100E0B755 /* UICollectionView+Draggable.h */,
+				3F3AF1531B159C3100E0B755 /* UICollectionView+Draggable.m */,
+				3F3AF1541B159C3100E0B755 /* UICollectionViewDataSource_Draggable.h */,
+				3F3AF1551B159C3100E0B755 /* UICollectionViewLayout_Warpable.h */,
+			);
+			name = DraggableCollectionView;
+			sourceTree = "<group>";
+		};
+		3F3AF15F1B159C5100E0B755 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AF1591B159C4C00E0B755 /* LSCollectionViewHelper.h */,
+				3F3AF15A1B159C4C00E0B755 /* LSCollectionViewHelper.m */,
+				3F3AF15B1B159C4C00E0B755 /* LSCollectionViewLayoutHelper.h */,
+				3F3AF15C1B159C4C00E0B755 /* LSCollectionViewLayoutHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		3F3AF1631B159C6E00E0B755 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AF1601B159C6500E0B755 /* DraggableCollectionViewFlowLayout.h */,
+				3F3AF1611B159C6500E0B755 /* DraggableCollectionViewFlowLayout.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		3F3AF1781B159CDA00E0B755 /* TrashCanView */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AF1641B159CD500E0B755 /* bucket_body_style2.png */,
+				3F3AF1651B159CD500E0B755 /* bucket_lid_style2.png */,
+				3F3AF1661B159CD500E0B755 /* BucketBody.png */,
+				3F3AF1671B159CD500E0B755 /* BucketBody@2x.png */,
+				3F3AF1681B159CD500E0B755 /* BucketLid.png */,
+				3F3AF1691B159CD500E0B755 /* BucketLid@2x.png */,
+				3F3AF16A1B159CD500E0B755 /* input_mic.png */,
+				3F3AF16B1B159CD500E0B755 /* GLBucket.h */,
+				3F3AF16C1B159CD500E0B755 /* GLBucket.m */,
+				3F3AF16D1B159CD500E0B755 /* TrashCanView.h */,
+				3F3AF16E1B159CD500E0B755 /* TrashCanView.m */,
+			);
+			name = TrashCanView;
+			sourceTree = "<group>";
+		};
+		3F3AF17C1B15A7B400E0B755 /* MusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AF1791B15A7B000E0B755 /* JLMusicPlayer.h */,
+				3F3AF17A1B15A7B000E0B755 /* JLMusicPlayer.m */,
+			);
+			name = MusicPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F3AF1231B159C0600E0B755 /* TrashCanTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F3AF14A1B159C0700E0B755 /* Build configuration list for PBXNativeTarget "TrashCanTest" */;
+			buildPhases = (
+				3F3AF1201B159C0600E0B755 /* Sources */,
+				3F3AF1211B159C0600E0B755 /* Frameworks */,
+				3F3AF1221B159C0600E0B755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrashCanTest;
+			productName = TrashCanTest;
+			productReference = 3F3AF1241B159C0600E0B755 /* TrashCanTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F3AF13F1B159C0700E0B755 /* TrashCanTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F3AF14D1B159C0700E0B755 /* Build configuration list for PBXNativeTarget "TrashCanTestTests" */;
+			buildPhases = (
+				3F3AF13C1B159C0700E0B755 /* Sources */,
+				3F3AF13D1B159C0700E0B755 /* Frameworks */,
+				3F3AF13E1B159C0700E0B755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F3AF1421B159C0700E0B755 /* PBXTargetDependency */,
+			);
+			name = TrashCanTestTests;
+			productName = TrashCanTestTests;
+			productReference = 3F3AF1401B159C0700E0B755 /* TrashCanTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F3AF11C1B159C0600E0B755 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "TSUNG-LUN LIAO";
+				TargetAttributes = {
+					3F3AF1231B159C0600E0B755 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					3F3AF13F1B159C0700E0B755 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 3F3AF1231B159C0600E0B755;
+					};
+				};
+			};
+			buildConfigurationList = 3F3AF11F1B159C0600E0B755 /* Build configuration list for PBXProject "TrashCanTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F3AF11B1B159C0600E0B755;
+			productRefGroup = 3F3AF1251B159C0600E0B755 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F3AF1231B159C0600E0B755 /* TrashCanTest */,
+				3F3AF13F1B159C0700E0B755 /* TrashCanTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F3AF1221B159C0600E0B755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3AF1751B159CD600E0B755 /* input_mic.png in Resources */,
+				3F3AF1721B159CD600E0B755 /* BucketBody@2x.png in Resources */,
+				3F3AF1361B159C0600E0B755 /* Main.storyboard in Resources */,
+				3F3AF1711B159CD600E0B755 /* BucketBody.png in Resources */,
+				3F3AF13B1B159C0600E0B755 /* LaunchScreen.xib in Resources */,
+				3F3AF1701B159CD600E0B755 /* bucket_lid_style2.png in Resources */,
+				3F3AF16F1B159CD600E0B755 /* bucket_body_style2.png in Resources */,
+				3F3AF1381B159C0600E0B755 /* Images.xcassets in Resources */,
+				3F3AF1731B159CD600E0B755 /* BucketLid.png in Resources */,
+				3F3AF1741B159CD600E0B755 /* BucketLid@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3AF13E1B159C0700E0B755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F3AF1201B159C0600E0B755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3AF1771B159CD600E0B755 /* TrashCanView.m in Sources */,
+				3F3AF1561B159C3100E0B755 /* Cell.m in Sources */,
+				3F3AF17B1B15A7B000E0B755 /* JLMusicPlayer.m in Sources */,
+				3F3AF12D1B159C0600E0B755 /* AppDelegate.m in Sources */,
+				3F3AF1761B159CD600E0B755 /* GLBucket.m in Sources */,
+				3F3AF12A1B159C0600E0B755 /* main.m in Sources */,
+				3F3AF1331B159C0600E0B755 /* ViewController.m in Sources */,
+				3F3AF1571B159C3100E0B755 /* UICollectionView+Draggable.m in Sources */,
+				3F3AF15E1B159C4C00E0B755 /* LSCollectionViewLayoutHelper.m in Sources */,
+				3F3AF1621B159C6500E0B755 /* DraggableCollectionViewFlowLayout.m in Sources */,
+				3F3AF15D1B159C4C00E0B755 /* LSCollectionViewHelper.m in Sources */,
+				3F3AF1301B159C0600E0B755 /* TrashCanTest.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3AF13C1B159C0700E0B755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3AF1471B159C0700E0B755 /* TrashCanTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F3AF1421B159C0700E0B755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F3AF1231B159C0600E0B755 /* TrashCanTest */;
+			targetProxy = 3F3AF1411B159C0700E0B755 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F3AF1341B159C0600E0B755 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F3AF1351B159C0600E0B755 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F3AF1391B159C0600E0B755 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F3AF13A1B159C0600E0B755 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F3AF1481B159C0700E0B755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F3AF1491B159C0700E0B755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F3AF14B1B159C0700E0B755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrashCanTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F3AF14C1B159C0700E0B755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrashCanTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F3AF14E1B159C0700E0B755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TrashCanTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrashCanTest.app/TrashCanTest";
+			};
+			name = Debug;
+		};
+		3F3AF14F1B159C0700E0B755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TrashCanTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrashCanTest.app/TrashCanTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F3AF11F1B159C0600E0B755 /* Build configuration list for PBXProject "TrashCanTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3AF1481B159C0700E0B755 /* Debug */,
+				3F3AF1491B159C0700E0B755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F3AF14A1B159C0700E0B755 /* Build configuration list for PBXNativeTarget "TrashCanTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3AF14B1B159C0700E0B755 /* Debug */,
+				3F3AF14C1B159C0700E0B755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F3AF14D1B159C0700E0B755 /* Build configuration list for PBXNativeTarget "TrashCanTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3AF14E1B159C0700E0B755 /* Debug */,
+				3F3AF14F1B159C0700E0B755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F3AF12E1B159C0600E0B755 /* TrashCanTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F3AF12F1B159C0600E0B755 /* TrashCanTest.xcdatamodel */,
+			);
+			currentVersion = 3F3AF12F1B159C0600E0B755 /* TrashCanTest.xcdatamodel */;
+			path = TrashCanTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3F3AF11C1B159C0600E0B755 /* Project object */;
+}
